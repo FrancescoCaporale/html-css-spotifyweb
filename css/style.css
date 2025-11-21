@@ -1,4 +1,6 @@
-/* RESET */
+/**********************************
+   RESET
+**********************************/
 * {
     margin: 0;
     padding: 0;
@@ -9,212 +11,28 @@ body {
     font-family: sans-serif;
 }
 
+/**********************************
+   APP LAYOUT
+**********************************/
 .app {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Contiene sidebar + main */
 .content {
     flex: 1;
     display: flex;
 }
 
-/* SIDEBAR */
-.sidebar {
-    width: 230px;
-    background-color: black;
-}
-
-/* MAIN */
-.main {
-   flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    background-color: rgb(30, 30, 30);
-}
-
-/* PLAYER */
 .player {
     height: 90px;
     background-color: rgb(20, 20, 20);
 }
 
-/* ---- SIDEBAR STRUCTURE (RGB) ---- */
-
-.sidebar {
-    width: 230px;
-    background-color: rgb(0, 0, 0);
-    /* nero Spotify */
-    display: flex;
-    flex-direction: column;
-}
-
-/* Parte alta */
-.sidebar-top {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Blocco menu */
-.logo-block {
-    height: 40px;
-    background-color: rgb(0, 255, 0);
-}
-
-.menu-block {
-    height: 120px;
-    background-color: rgb(0, 255, 0);
-}
-
-.playlist-block {
-    flex-grow: 1;
-    background-color: rgb(255, 0, 0);
-    /* rosso */
-}
-
-.install-block {
-    height: 30px;
-    background-color: rgb(0, 0, 255);
-    /* blu */
-}
-
-.user-block {
-    height: 40px;
-    background-color: rgb(0, 0, 255);
-}
-
-/* ------- TOPBAR (NAVBAR SUPERIORE) ------- */
-
-.topbar {
-    height: 70px;
-    background-color: rgb(40, 40, 40);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-/* Blocchi dentro la topbar */
-.nav-left-block {
-    width: 300px;
-    height: 40px;
-    background-color: rgb(100, 100, 100);
-}
-
-.nav-right-block {
-    width: 200px;
-    height: 40px;
-    background-color: rgb(100, 100, 100);
-}
-
-/* Area contenuti */
-.content-area {
-    flex-grow: 1;
-    background-color: rgb(50, 50, 50);
-}
-
-.subnav {
-    height: 50px;
-    background-color: rgb(55, 55, 55);
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.subnav-menu {
-    height: 30px;
-    width: 200px;
-    background-color: rgb(90, 90, 90);
-}
-
-.sidebar-bottom{
-    margin-top: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* TOPBAR */
-.topbar {
-    height: 80px;
-    background-color: rgb(24, 24, 24);
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    gap: 20px;
-}
-
-/* Left arrows */
-.nav-left {
-    display: flex;
-    gap: 10px;
-}
-
-.arrow-btn {
-    background-color: rgb(0, 0, 0);
-    border: none;
-    color: white;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-/* Center menu */
-.nav-center {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.nav-center a {
-    color: rgb(180, 180, 180);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.nav-center a.active {
-    color: white;
-    border-bottom: 2px solid rgb(30, 215, 96);
-    padding-bottom: 5px;
-}
-
-/* Right upgrade button */
-.nav-right .upgrade-btn {
-    padding: 10px 25px;
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.nav-right .upgrade-btn:hover {
-    border-color: rgb(30, 215, 96);
-    color: rgb(30, 215, 96);
-}
-
-/* SUBNAV */
-.subnav {
-    height: 50px;
-    background-color: rgb(18, 18, 18);
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-}
-
-/* ---------- SIDEBAR ---------- */
-
+/**********************************
+   SIDEBAR
+**********************************/
 .sidebar {
     width: 230px;
     background-color: rgb(0, 0, 0);
@@ -299,4 +117,197 @@ body {
     width: 28px;
     background-color: white;
     border-radius: 50%;
+}
+
+/**********************************
+   MAIN
+**********************************/
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    background: linear-gradient(
+        180deg,
+        rgb(20, 25, 35) 0%,
+        rgb(18, 18, 18) 40%,
+        rgb(18, 18, 18) 100%
+    );
+}
+
+/**********************************
+   TOPBAR (FEDELE A SPOTIFY)
+**********************************/
+.topbar {
+    height: 80px;
+    background-color: rgb(8, 11, 18);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Frecce */
+.topbar-left {
+    display: flex;
+    gap: 15px;
+}
+
+.arrow-btn {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-btn img {
+    width: 16px;
+    opacity: 0.7;
+}
+
+/* Menu centrale */
+.topbar-nav {
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.topbar-nav a {
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+}
+
+.topbar-nav a.active {
+    color: white;
+    border-bottom: 2px solid rgb(30, 215, 96);
+    padding-bottom: 4px;
+}
+
+/* Upgrade */
+.topbar-right .upgrade-btn {
+    padding: 8px 25px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+/**********************************
+   SUBNAV (SOTTO TOPBAR)
+**********************************/
+.subnav {
+    height: 60px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 80px;
+    z-index: 998;
+}
+
+.subnav-menu {
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subnav-menu a {
+    color: rgb(179,179,179);
+    text-decoration: none;
+    padding-bottom: 6px;
+}
+
+.subnav-menu a.active {
+    color: rgb(255,255,255);
+    border-bottom: 2px solid rgb(30,215,96);
+}
+
+/**********************************
+   CONTENT AREA
+**********************************/
+.content-area {
+    flex-grow: 1;
+    padding: 25px;
+}
+
+/**********************************
+   SECTIONS / GRID / CARD
+**********************************/
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 180px;
+    cursor: pointer;
+    color: white;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #b3b3b3;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.play-icon {
+    width: 50px;
+}
+
+.card:hover .card-image img {
+    opacity: 0.4;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
 }

@@ -10,133 +10,179 @@
 
 <body>
 
-    <div class="app">
+<div class="app">
 
-        <!-- Contenitore principale -->
-        <div class="content">
+    <!-- Contenitore principale -->
+    <div class="content">
 
-            <!-- SIDEBAR -->
-            <div class="sidebar">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
 
-                <div class="sidebar-top">
-                    <div class="logo">
-                        <img src="./img/logo.svg" alt="Spotify Logo">
-                    </div>
-
-                    <nav class="main-menu">
-                        <a href="#" class="menu-item active">
-                            <img src="./img/home.svg" alt="">
-                            <span>Home</span>
-                        </a>
-                        <a href="#" class="menu-item">
-                            <img src="./img/search.svg" alt="">
-                            <span>Cerca</span>
-                        </a>
-                        <a href="#" class="menu-item">
-                            <img src="./img/libreria.svg" alt="">
-                            <span>La tua libreria</span>
-                        </a>
-                    </nav>
-
-                    <div class="playlist-section">
-                        <h4>Playlist</h4>
-
-                        <a href="#" class="menu-item">
-                            <div class="create-icon">+</div>
-                            <span>Crea Playlist</span>
-                        </a>
-
-                        <div class="playlist-list">
-                            <span>Nome Playlist</span>
-                            <span>Nome Playlist</span>
-                            <span>Nome Playlist</span>
-                            <span>Nome Playlist</span>
-                            <span>Nome Playlist</span>
-                        </div>
-                    </div>
+            <div class="sidebar-top">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="Spotify Logo">
                 </div>
 
-                <div class="sidebar-bottom">
-                    <a href="#" class="menu-item install-app">
-                        <img src="./img/download.svg">
-                        <span>Installa app</span>
+                <nav class="main-menu">
+                    <a href="#" class="menu-item active">
+                        <img src="./img/home.svg" alt="">
+                        <span>Home</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <img src="./img/search.svg" alt="">
+                        <span>Cerca</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <img src="./img/libreria.svg" alt="">
+                        <span>La tua libreria</span>
+                    </a>
+                </nav>
+
+                <div class="playlist-section">
+                    <h4>Playlist</h4>
+
+                    <a href="#" class="menu-item">
+                        <div class="create-icon">+</div>
+                        <span>Crea Playlist</span>
                     </a>
 
-                    <div class="profile">
-                        <img src="./img/profile.svg" class="profile-pic">
-                        <span>John Doe</span>
+                    <div class="playlist-list">
+                        <span>Nome Playlist</span>
+                        <span>Nome Playlist</span>
+                        <span>Nome Playlist</span>
+                        <span>Nome Playlist</span>
+                        <span>Nome Playlist</span>
                     </div>
                 </div>
-
             </div>
 
-            <!-- MAIN -->
-            <main class="main">
+            <div class="sidebar-bottom">
+                <a href="#" class="menu-item install-app">
+                    <img src="./img/download.svg">
+                    <span>Installa app</span>
+                </a>
 
-                <div class="topbar">
-                    <div class="nav-left">
-                        <button class="arrow-btn">←</button>
-                        <button class="arrow-btn">→</button>
-                    </div>
-
-                    <div class="nav-center">
-                        <a href="#" class="active">IN EVIDENZA</a>
-                        <a href="#">PODCAST</a>
-                        <a href="#">CLASSIFICHE</a>
-                        <a href="#">GENERI E MOOD</a>
-                        <a href="#">NUOVE USCITE</a>
-                        <a href="#">SCOPRI</a>
-                    </div>
-
-                    <div class="nav-right">
-                        <button class="upgrade-btn">EFFETTUA L’UPGRADE</button>
-                    </div>
+                <div class="profile">
+                    <img src="./img/profile.svg" class="profile-pic">
+                    <span>John Doe</span>
                 </div>
-
-                <div class="subnav">
-                    <!-- per ora vuoto -->
-                </div>
-
-                <div class="content-area">
-                    <section class="section">
-                        <h2>Recently played</h2>
-
-                        <div class="cards-grid">
-
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-                                    <div class="card-overlay">
-                                        <img class="play-icon" src="img/play.svg" alt="">
-                                    </div>
-                                </div>
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="img/stranger.jpeg" alt="Stranger Things">
-                                    <div class="card-overlay">
-                                        <img class="play-icon" src="img/play.svg" alt="">
-                                    </div>
-                                </div>
-                                <h3>Stranger Things, Vol. 1</h3>
-                                <p>Kyle Dixon & Michael Stein</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-            </main>
-
+            </div>
 
         </div>
 
-        <!-- PLAYER -->
-        <footer class="player"></footer>
+        <!-- MAIN -->
+        <div class="main">
 
-    </div>
+            <!-- TOPBAR -->
+            <div class="topbar">
+                <div class="topbar-left">
+                    <button class="arrow-btn"><img src="img/arrow-left.svg" alt=""></button>
+                    <button class="arrow-btn"><img src="img/arrow-right.svg" alt=""></button>
+                </div>
+
+                <nav class="topbar-nav">
+                    <a href="#" class="active">IN EVIDENZA</a>
+                    <a href="#">PODCAST</a>
+                    <a href="#">CLASSIFICHE</a>
+                    <a href="#">GENERI E MOOD</a>
+                    <a href="#">NUOVE USCITE</a>
+                    <a href="#">SCOPRI</a>
+                </nav>
+
+                <div class="topbar-right">
+                    <button class="upgrade-btn">EFFETTUA L’UPGRADE</button>
+                </div>
+            </div>
+
+            <!-- SUBNAV -->
+            <div class="subnav"></div>
+
+            <!-- AREA CONTENUTI -->
+            <div class="content-area">
+
+                <section class="section">
+                    <h2>Recently played</h2>
+
+                    <div class="cards-grid">
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
+                                <div class="card-overlay">
+                                    <img class="play-icon" src="./img/play.svg" alt="">
+                                </div>
+                            </div>
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./img/stranger.jpeg" alt="Stranger Things">
+                                <div class="card-overlay">
+                                    <img class="play-icon" src="./img/play.svg" alt="">
+                                </div>
+                            </div>
+                            <h3>Stranger Things, Vol. 1</h3>
+                            <p>Kyle Dixon & Michael Stein</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./img/aquietplace.jpeg" alt="A Quiet Place">
+                                <div class="card-overlay">
+                                    <img class="play-icon" src="./img/play.svg" alt="">
+                                </div>
+                            </div>
+                            <h3>A Quiet Place</h3>
+                            <p>Subtitle</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./img/split.jpeg" alt="Split">
+                                <div class="card-overlay">
+                                    <img class="play-icon" src="./img/play.svg" alt="">
+                                </div>
+                            </div>
+                            <h3>Split</h3>
+                            <p>Subtitle</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./img/cure.jpeg" alt="A Cure for Wellness">
+                                <div class="card-overlay">
+                                    <img class="play-icon" src="./img/play.svg" alt="">
+                                </div>
+                            </div>
+                            <h3>A Cure for Wellness</h3>
+                            <p>Subtitle</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./img/sinister.jpeg" alt="Sinister">
+                                <div class="card-overlay">
+                                    <img class="play-icon" src="./img/play.svg" alt="">
+                                </div>
+                            </div>
+                            <h3>Sinister</h3>
+                            <p>Subtitle</p>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+        </div> <!-- fine MAIN -->
+
+    </div> <!-- fine CONTENT -->
+
+</div> <!-- fine APP -->
+
+<footer class="player"></footer>
 
 </body>
 
